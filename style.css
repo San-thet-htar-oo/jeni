@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+body {
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 10px;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border:none;
+  background-color: rgb(239, 62, 39);
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  
+}
+
+button:hover{
+  background-color: rgb(249, 192, 185);
+  color:rgb(248, 29, 14) ;
+}
+
+.navbar {
+ font-size: 16px;
+ top: 0;
+ left: 0;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+.navbar-light .navbar-nav .nav-item {
+ padding: 0 10px;
+ color: #1d1d1d;
+ transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link:active {
+ color:rgb(239, 62, 39);
+ font-weight: 500;
+}
+
+.imglogo{
+    width: 110px;
+    height: 50px;
+    
+}
+#Home{
+  background-image:url("Images/head/head.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+}
+#Home span{
+  color: rgb(239, 62, 39);
+ font-weight: 600;
+}
+#Home .head-text{
+  text-align: center;
+  padding-top: 170px;
+}
+@media only screen and (max-width:991px){
+#navbarSupportedContent > ul{
+  margin: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: left;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+  padding: 10px 0;
+}
+}
+.img-fluid col-lg-2 col-md-3 col-6{
+  width: 100px;
+  height: 80px;
+}
+#brands{
+  align-content: center;
+  justify-content: center;
+  padding-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+#new .one img{
+width: 100%;
+height: 100%;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+background-color: gainsboro;
+opacity: 55%;
+
+}
+
+#new .one .detail{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+
+}
+
+#new .one:hover .detail{
+  cursor: pointer;
+  background-color: #fff;
+  opacity: 60%;
+  width: 100%;
+  height: 100%;
+}
+
+#new .one .detail button{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(246, 10, 116);
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ff59ac;
+  padding: -2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+
+#new .one .detail button:hover{
+  color: #fcfcfc;
+  border-bottom: 1px solid #aaa1a5;
+  font-weight:900;
+  font-style: oblique;
+  width: 200px;
+  height: 50px;
+  transition: 0.1s ease;
+  border-color: #f38fab;
+  background-color: rgb(249, 166, 155);
+  border-radius: 10px;
+}
+
+#new .one:nth-child(1) .detail{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items:flex-end;
+  text-align:start;
+}
+#new .one:nth-child(2) .detail{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+}
+#new .one:nth-child(3) .detail{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+}
+/*products*/
+
+.products{
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+}
+
+.products img{
+  transition: 0.3s all;
+  width:300px;
+  height: 270px;
+  border-radius: 3px;
+}
+
+.products:hover img{
+  opacity: 0.7;
+}
+
+.products .p-buybtn{
+  background-color:rgb(239, 62, 39) ;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.products:hover .p-buybtn{
+  transform: translateY(0px);
+  opacity: 1;
+  color:rgb(246, 233, 232) ;
+}
+
+hr{
+  width: 70px;
+  height: 12px;
+  background-color: rgb(239, 62, 39);
+}
+
+.star i{
+  color: goldenrod;
+}
+
+.star{
+  padding: 10px 0;
+}
+#banner .container{
+  text-align: right;
+}
+
+
+#banner{
+  background-image:url("Images/banner/b-2.jpg");
+  font-weight: 900;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 0px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:center;
+}
+
+.copyright img{
+  width: 90px;
+  height: 40px;
+  opacity: 1;
+
+}
+.copyright p{
+  font-size: small;
+}
+
+footer{
+  background-color: #1d1d1d;
+  color: #e5e2e3;
+}
+
+footer h5{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+footer li a{
+  font-size: 0.8rem;
+  color: #999;
+}
+
+footer li a:hover{
+  font-size: 0.8rem;
+  color: #aaa8f3;
+}
+
+footer p{
+  color: #999;
+  font-size: 0.8rem;
+}
+
+footer .copyright a{
+  color: #000;
+  width: 38px;
+  height: 38px;
+  background-color: #a6aeb8;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+footer .copyright a:hover{
+  color: #000;
+  background-color: rgb(239, 62, 39);
+
+}
+
+.animated-box {
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+
+.animate-on-scroll {
+  opacity: 0; /* Initially hide elements */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+.animated {
+  opacity: 1;
+}
